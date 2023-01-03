@@ -1,0 +1,60 @@
+.tour
+{
+    border: 1px solid #dddfe2;
+    border-radius: 10px;
+    position: relative;
+    margin-bottom: 5px;
+}
+.tour:hover
+{
+    box-shadow: 8px 8px 8px rgba(0,0,0,0.125);
+    transform: translate(0, -3px);
+}
+
+.hottour .quantam button:hover
+{
+    color: red;
+}
+.hottour .tourcontent
+{
+    border-radius: 0 0 10px 10px;
+    box-shadow: 0px 5px 5px rgba(0,0,0,0.125);
+}
+.hottour .tourcontent p
+{
+    margin-bottom: 10px;
+}
+.hottour .tourcontent p a:hover
+{
+    color: rgb(0, 140, 255);
+}
+#giagoc
+{
+    color: red
+}
+#giamgia
+{
+    background-color: red; 
+    float: right; 
+    color: white; 
+    border-radius: 3px; 
+    padding: 3px;
+}
+.datngay div
+{
+    margin-top: 20px;
+    margin-left: 38%;
+}
+.datngay button
+{
+    font-size: 15px;
+    background-color:#3ca0e7;
+    padding: 5px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+.datngay button:hover
+{
+    box-shadow: 0px 0px 20px #3ca0e7;
+}

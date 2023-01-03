@@ -1,0 +1,624 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Grape+Nuts&family=Quicksand:wght@600;700&display=swap');
+*
+{
+    margin: 0;
+    padding: 0;
+    font-family: 'Quicksand', sans-serif;
+}
+
+.hottour
+{
+    height: max-content;
+}
+#tour_container
+{
+    width: 90%;
+    margin: auto;
+}
+#tour_container .row
+{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+#tour_container .row .two_column
+{
+    flex: 5;
+    display: flex;
+    justify-content: space-around;
+}
+.tour
+{
+    border: 1px solid #dddfe2;
+    border-radius: 10px;
+    position: relative;
+    display: flex;
+    margin-bottom: 5px;
+    flex-direction: column;
+}
+.tour:hover
+{
+    box-shadow: 8px 8px 8px rgba(0,0,0,0.125);
+    transform: translate(0, -3px);
+}
+.hottour h2
+{
+    margin-left: 15%;
+    padding-top: 100px;
+    font-size: 25px;
+}
+.hottour img
+{
+    height: 100%;
+    width: 100%;
+    position: relative;
+    border-radius: 10px 10px 0 0;
+    object-fit: cover;
+}
+.hottour .quantam button
+{
+    border: none;
+    border-radius: 5px;
+    background-color: rgba(202,228,225,0.5);
+    position: absolute;
+    font-size: 25px;
+    top: 20px;
+    left: 10px;
+    padding: 3px;
+    color: white;
+    cursor: pointer;
+    line-height: 0.5;
+}
+.hottour .quantam button:hover
+{
+    color: red;
+}
+.hottour .quantam #danhgia
+{
+    position: absolute;
+    top:10px;
+    right: 5px;
+    font-size: 40px;
+    color: rgb(255, 166, 0);
+}
+.hottour .quantam #text
+{
+    position: absolute;
+    top:21px;
+    right: 18px;
+    font-size: 15px;
+    color: white;
+}
+.hottour .tourcontent
+{
+    border-radius: 0 0 10px 10px;
+    padding: 10px;
+    box-shadow: 0px 5px 5px rgba(0,0,0,0.125);
+}
+.hottour .tourcontent p
+{
+    margin-bottom: 10px;
+}
+.hottour .tourcontent p a:hover
+{
+    color: rgb(0, 140, 255);
+}
+#giagoc
+{
+    color: red
+}
+#giamgia
+{
+    background-color: red; 
+    float: right; 
+    color: white; 
+    border-radius: 3px; 
+    padding: 3px;
+}
+.datngay div
+{
+    margin-top: 20px;
+    margin-left: 38%;
+}
+.datngay button
+{
+    font-size: 15px;
+    background-color:#3ca0e7;
+    padding: 5px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+.datngay button:hover
+{
+    box-shadow: 0px 0px 20px #3ca0e7;
+}
+.khamphavn
+{
+    margin-top: 100px;
+}
+.khamphavn h2
+{
+    margin-left: 15%;
+    font-size: 25px;
+    margin-bottom: 30px;
+}
+.khamphavn p
+{
+    margin-left: 15%;
+    margin-right: 15%;
+}
+.diadiemkhampha
+{
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+.tinh 
+{
+    width: 18%;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+}
+.tinh img
+{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 5px;
+}
+.tinh .text
+{
+    position: absolute;
+    bottom: 10px;
+    width: 100%;
+    text-align: center;
+    color: white;
+    font-size: 20px;
+}
+.tinh:hover img
+{
+    transition: all 1s;
+    transform: scale(1.3);
+}
+#sign
+{
+    width: 100%;
+    height: 1800%;
+    background-color: rgba(0,0,0,0.6);
+    position: absolute;
+    left: 0;
+    top: 0; 
+    display: none;
+}
+#signin_contain
+{
+    width: 30%;
+    height: 44%;
+    background-color: white;
+    margin-top: 150px;
+    margin-left: 35%;
+    border-radius: 10px;
+    text-align: center;
+}
+#signin_contain #title 
+{
+    clear: both;
+    top: 100px;
+    font-size: 25px;
+}
+#signin_contain a 
+{
+    text-decoration: none;
+    color:#2a51bb;
+    font-style: italic;
+    font-size: 15px;
+    display: block;
+    margin-top: 10px;
+}
+#signin_contain a:hover
+{
+    color: blue;
+}
+#signin_contain input[type="text"], #signin_contain input[type="password"]
+{
+    font-size: 20px;
+    border: none;
+    border-bottom: 2px solid black;
+    margin-top: 50px;
+    padding: 5px;
+    outline: none;
+}
+#signin_contain input[type="text"]:focus , #signin_contain input[type="password"]:focus
+{
+    border-bottom: 2px solid green;
+}
+#signup_contain
+{
+    width: 30%;
+    height: max-content;
+    background-color: white;
+    margin-top: 150px;
+    margin-left: 35%;
+    border-radius: 10px;
+    display: none;
+    text-align: center;
+}
+#signup_contain #title 
+{
+    clear: both;
+    top: 100px;
+    font-size: 25px;
+}
+#signup_contain a
+{
+    text-decoration: none;
+    color: #134ce9;
+}
+#signup_contain span 
+{
+    display: inline-block;
+    margin-left: 60px;
+    margin-right: 60px;
+}
+#signup_contain input[type="text"], #signup_contain input[type="password"], #signup_contain input[type="email"]
+{
+    font-size: 20px;
+    border: none;
+    border-bottom: 2px solid black;
+    margin-top: 30px;
+    padding: 5px;
+    outline: none;
+}
+#signup_contain input[type="text"]:invalid, #signup_contain #passwordsu:invalid, #signup_contain input[type="email"]:invalid
+{
+    border-bottom: 2px solid red;
+}
+#signup_contain input[type="text"]:valid, #signup_contain #passwordsu:valid, #signup_contain input[type="email"]:valid
+{
+    border-bottom: 2px solid green;
+}
+#signup_contain #check_condition
+{ 
+    width: 50%;
+    text-align: left;
+    margin-top: 50px;
+}
+#sign input[type="submit"]
+{
+    background-image: linear-gradient(90deg, #0162c8,#55e7fc);
+    font-size: 20px; 
+    padding: 10px; 
+    border-radius: 20px; 
+    border: none;
+    color: white;
+    margin-bottom: 10px;
+}
+#chiase
+{
+    margin-top: 50px;
+}
+#chiase h2
+{
+    margin-left: 15%;
+    font-size: 25px;
+    margin-bottom: 30px;
+}
+#chiase #contain
+{
+    display: flex;
+}
+#chiase #contain #left
+{
+    flex: 5;
+}
+#chiase #contain #left .content 
+{
+    display: flex;
+    width: 50%;
+    height: 20%;
+    margin-left: 30%;
+    margin-bottom: 50px;
+}
+#chiase #contain #left .content img 
+{
+    width: 50%;
+    height: 100%;
+}
+#chiase #contain #right
+{
+    flex: 5;
+}
+#chiase #contain #right .content 
+{
+    display: flex;
+    margin-left: 17%;
+    width: 50%;
+    height: 20%;
+    margin-bottom: 50px;
+}
+#chiase #contain #right .content img 
+{
+    width: 50%;
+    height: 100%;
+}
+#chiase #contain .content .title_time
+{
+    margin-left: 10px;
+    font-size: 17px;
+}
+#chiase #contain .content .time 
+{
+    margin-top: 100px;
+}
+#chiase #contain .content .title:hover
+{
+    color: rgb(255, 136, 0);
+    cursor: pointer;
+}
+#chiase .other_button
+{
+    text-align: center;
+    margin-top: 10px;
+}
+#chiase .other_button button
+{
+    padding: 8px; 
+    background-color:rgb(17, 126, 228); 
+    color: white; 
+    border: none; 
+    font-size: 17px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+#footer
+{
+    margin-top: 40px;
+    background-color: rgb(237, 237, 240);
+}
+#footer #footer_container
+{
+    width: 70%;
+    display: flex;
+    margin: auto;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+#footer #left
+{
+    flex: 4;
+}
+#footer h2
+{
+    font-size: 25px;
+}
+#footer #info p
+{
+    margin-top: 10px;
+}
+#footer #payment
+{
+    margin-top: 20px;
+}
+#footer #payment img 
+{
+    margin-right: 20px;
+}
+#footer #middle
+{
+    flex: 3;
+}
+#footer #middle #mxh
+{
+    font-size: 40px;
+}
+#footer #middle #mxh i 
+{
+    margin-right: 20px;
+}
+#footer #right
+{
+    flex: 3;
+}
+#footer #right #form
+{
+    background-color: white;
+    padding: 10px;
+}
+#footer #right #form p
+{
+    font-size: 20px;
+    color: #134ce9;
+}
+#footer #right #form .row
+{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 5px;
+}
+#footer #right #form .row label
+{
+    flex: 3;
+    font-size: 19px;
+}
+#footer #right #form .row label i
+{
+    color: red;
+}
+#footer #right #form .row input[type="text"], #footer #right #form .row input[type="email"]
+{
+    flex: 7;
+    padding: 5px;
+    font-size: 15px;
+}
+#footer #right #form .row input[type="submit"]
+{
+    margin: auto;
+    padding: 10px;
+    border-radius: 10px;
+    font-size: 15px;
+    border: none;
+    background-color: #0162c8;
+    color: white
+}
+@media (max-width: 1200px)
+{
+    #tour_container .row
+    {
+        flex-direction: column;
+    }
+    #tour_container .row .two_column
+    {
+        margin-top: 30px;
+    }
+    #signin_contain
+    {
+        width: 35%;
+        height: 45%;
+    }
+    #signup_contain
+    {
+        width: 45%;
+    }
+}
+@media (max-width: 992px)
+{
+    #nav
+    {
+        flex-direction: column;
+    }
+    .list
+    {
+        display: none;
+    }
+    #web_name
+    {
+        display: block;
+    }
+    #bt_toggle
+    {
+        position: absolute;
+        display: initial;
+    }
+    .nav_items
+    {
+        display: flex;
+    }
+    #dulichtrongnuoc table
+    {
+        margin-top: 50px;
+    }
+    #hottour ul
+    {
+        margin-top: 50px;
+    }
+    #diemdi_container
+    {
+        margin-left: 0 !important;
+    }
+    #chiase #contain
+    {
+        flex-direction: column;
+    }
+    #chiase #contain #left .content 
+    {
+        margin-left: 15%;
+        width: 80%;
+        margin-bottom: 15px;
+    }
+    #chiase #contain #right .content 
+    {
+        margin-left: 15%;
+        width: 80%;
+        margin-bottom: 15px;
+    }
+    #chiase #contain .content img
+    {
+        display: none;
+    }
+    #chiase #contain .content .time
+    {
+        display: none;
+    }
+    #footer #right
+    {
+        display: none;
+    }
+    #signin_contain
+    {
+        margin-left: 30%;
+        width: 50%;
+        height: 7%;
+    }
+    #signup_contain
+    {
+        width: 50%;
+        margin-left: 25%;
+        margin-top: 50px;
+    }
+}
+@media (max-width:750px)
+{
+    .slidebox
+    {
+        height: 50%;
+    }
+    .slideshow
+    {
+        height: 600px;
+    }
+    .navbar_self .neon
+    {
+        font-size: 20px;
+    }
+    .navbar_self ul li>a
+    {
+        font-size: 15px;
+        padding: 10px;
+    }
+    .navbar_self #account i
+    {
+        font-size: 20px;
+    }
+    #bt_toggle i
+    {
+        font-size: 17px;
+        padding: 5px 10px;
+    }
+    #dulichtrongnuoc:hover table
+    {
+        display: none;
+    }
+    #hottour:hover ul
+    {
+        display: none;
+    }
+    #signin_contain
+    {
+        width: 80%;
+        height: 11.2%;
+        margin-left: 10%;
+    }
+}
+@media (max-width: 600px)
+{
+    .diadiemkhampha
+    {
+        flex-direction: column;
+        align-items: center;
+    }
+    .tinh 
+    {
+        width: 70%;
+    }
+    #signup_contain
+    {
+        margin-top: 40px;
+        width: 80%;
+        margin-left: 13%;
+    }
+}
+
