@@ -1,12 +1,13 @@
 <?php
 session_start();
 if (!function_exists('currency_format')) {
-    function currency_format($number, $suffix = 'VNĐ') {
+    function currency_format($number, $suffix = 'VNĐ')
+    {
         if (!empty($number)) {
             return number_format($number, 0, '.', ',') . "{$suffix}";
         }
     }
-}  
+}
 $mod = isset($_GET['act']) ? $_GET['act'] : "home";
 switch ($mod) {
     case 'home':
@@ -23,8 +24,7 @@ switch ($mod) {
         require_once('Controllers/ToursController.php');
         $controller_obj = new ToursController();
         $xuli = isset($_GET['xuli']) ? $_GET['xuli'] : 'data';
-        switch ($xuli)
-        {
+        switch ($xuli) {
             case 'data':
                 $controller_obj->data();
                 break;
@@ -42,8 +42,7 @@ switch ($mod) {
         $act = $_GET['xuli'];
         require_once('Controllers/OrderController.php');
         $controller_obj = new OrderController();
-        switch ($act) 
-        {
+        switch ($act) {
             case 'thongtinkhachhang':
                 $controller_obj->detail();
                 break;
@@ -77,8 +76,7 @@ switch ($mod) {
         $act = $_GET['xuli'];
         require_once('Controllers/AccountController.php');
         $controller_obj = new AccountController();
-        if (isset($_SESSION['is_login']) && $_SESSION['is_login'] == true) 
-        {
+        if (isset($_SESSION['is_login']) && $_SESSION['is_login'] == true) {
             switch ($act) {
                 case 'dangxuat':
                     $controller_obj->logout();
@@ -92,10 +90,8 @@ switch ($mod) {
                 default:
                     header('location: ?act=error');
                     break;
-            } 
-        } 
-        else 
-        {
+            }
+        } else {
             switch ($act) {
                 case 'dangnhap':
                     $controller_obj->login();
